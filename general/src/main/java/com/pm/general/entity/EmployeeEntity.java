@@ -36,8 +36,6 @@ public class EmployeeEntity implements Serializable {
     private Long mobileNumber;
     private String title;
     private String rank;
-
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "employee")
-    private List<SiteEntity> sites;
+    private Long sitesTagged;
 
 }

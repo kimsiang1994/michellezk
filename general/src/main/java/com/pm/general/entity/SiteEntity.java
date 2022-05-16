@@ -26,7 +26,6 @@ public class SiteEntity {
             strategy = GenerationType.SEQUENCE,
             generator = "site_sequence"
     )
-    @Column(name = "unique_id")
     private Long uniqueId;
     private Long blockNumber;
     private String streetName;
@@ -36,11 +35,6 @@ public class SiteEntity {
     private String postalCode;
     private String status;
     private String remarks;
-
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "site")
-    private List<SparePartEntity> spareParts;
-
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "employee_id")
-    private EmployeeEntity employee;
+    private Long sparePartsTagged;
+    private Long employeesTagged;
 }
