@@ -26,7 +26,8 @@ public class SiteEntity {
             strategy = GenerationType.SEQUENCE,
             generator = "site_sequence"
     )
-    private Long siteUniqueId;
+    @Column(name = "unique_id")
+    private Long uniqueId;
     private Long blockNumber;
     private String streetName;
     private String unitNumber;
@@ -36,8 +37,7 @@ public class SiteEntity {
     private String status;
     private String remarks;
 
-    @OneToMany(mappedBy = "T_Site", cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH,
-            CascadeType.REFRESH })
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "site")
     private List<SparePartEntity> spareParts;
 
     @ManyToOne(cascade = CascadeType.ALL)

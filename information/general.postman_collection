@@ -1,0 +1,314 @@
+{
+	"info": {
+		"_postman_id": "0f09dbe8-fc85-46a2-a2fb-e1f314136f8f",
+		"name": "projectmichellenew",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GeneralApplication",
+			"item": [
+				{
+					"name": "Employee",
+					"item": [
+						{
+							"name": "findallemployees",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8088/pm/general/employee",
+									"host": [
+										"localhost"
+									],
+									"port": "8088",
+									"path": [
+										"pm",
+										"general",
+										"employee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "addemployee",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"employeeId\": \"SMALLMICHELLE5\",\r\n    \"firstName\": \"John\",\r\n    \"lastName\": \"Wooden\",\r\n    \"superiorId\": \"BIGMICHELLE5\",\r\n    \"emailAddress\": \"johnwooden@michelle.com\",\r\n    \"mobileNumber\": 97280011,\r\n    \"title\": \"Software Engineer\",\r\n    \"rank\": \"Associate\",\r\n    \"sites\": [\r\n        {\r\n            \"blockNumber\": 11,\r\n            \"streetName\": \"Cecil Street\",\r\n            \"unitNumber\": \"#01-12\",\r\n            \"city\": \"Singapore\",\r\n            \"country\": \"Singapore\",\r\n            \"postalCode\": \"412123\",\r\n            \"status\": \"Completed\",\r\n            \"remarks\": \"\"\r\n        }, \r\n        {\r\n            \"blockNumber\": 12,\r\n            \"streetName\": \"Town Square\",\r\n            \"unitNumber\": \"#04-12\",\r\n            \"city\": \"Singapore\",\r\n            \"country\": \"Singapore\",\r\n            \"postalCode\": \"423123\",\r\n            \"status\": \"In Progress\",\r\n            \"remarks\": \"\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8088/pm/general/employee",
+									"host": [
+										"localhost"
+									],
+									"port": "8088",
+									"path": [
+										"pm",
+										"general",
+										"employee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "findsingleemployee",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8088/pm/general/employee/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8088",
+									"path": [
+										"pm",
+										"general",
+										"employee",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deletesingleentity",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8088/pm/general/employee/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8088",
+									"path": [
+										"pm",
+										"general",
+										"employee",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Site",
+					"item": [
+						{
+							"name": "findallsites",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8088/pm/general/site",
+									"host": [
+										"localhost"
+									],
+									"port": "8088",
+									"path": [
+										"pm",
+										"general",
+										"site"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "addsite",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"blockNumber\": 11,\r\n    \"streetName\": \"Cecil Street\",\r\n    \"unitNumber\": \"#01-12\",\r\n    \"city\": \"Singapore\",\r\n    \"country\": \"Singapore\",\r\n    \"postalCode\": \"412123\",\r\n    \"status\": \"Completed\",\r\n    \"remarks\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8088/pm/general/site",
+									"host": [
+										"localhost"
+									],
+									"port": "8088",
+									"path": [
+										"pm",
+										"general",
+										"site"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "findsinglesite",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8088/pm/general/site/3",
+									"host": [
+										"localhost"
+									],
+									"port": "8088",
+									"path": [
+										"pm",
+										"general",
+										"site",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deletesinglesite",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8088/pm/general/site/3",
+									"host": [
+										"localhost"
+									],
+									"port": "8088",
+									"path": [
+										"pm",
+										"general",
+										"site",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "SparePart",
+					"item": [
+						{
+							"name": "findallspareparts",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8088/pm/general/spareParts",
+									"host": [
+										"localhost"
+									],
+									"port": "8088",
+									"path": [
+										"pm",
+										"general",
+										"spareParts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "addsparepart",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"partName\": \"Laptop\",\r\n    \"description\": \"DELL Secondhand Supreme\",\r\n    \"quantity\": 3,\r\n    \"price\": 250.12,\r\n    \"priority\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8088/pm/general/spareParts",
+									"host": [
+										"localhost"
+									],
+									"port": "8088",
+									"path": [
+										"pm",
+										"general",
+										"spareParts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "findsinglesparepart",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8088/pm/general/spareParts/5",
+									"host": [
+										"localhost"
+									],
+									"port": "8088",
+									"path": [
+										"pm",
+										"general",
+										"spareParts",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deletesinglesparepart",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8088/pm/general/spareParts/5",
+									"host": [
+										"localhost"
+									],
+									"port": "8088",
+									"path": [
+										"pm",
+										"general",
+										"spareParts",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

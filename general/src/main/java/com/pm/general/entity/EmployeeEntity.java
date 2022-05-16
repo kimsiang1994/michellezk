@@ -27,7 +27,7 @@ public class EmployeeEntity implements Serializable {
             strategy = GenerationType.SEQUENCE,
             generator = "employee_sequence"
     )
-    private Long employeeUniqueId;
+    private Long uniqueId;
     private String employeeId;
     private String firstName;
     private String lastName;
@@ -37,7 +37,7 @@ public class EmployeeEntity implements Serializable {
     private String title;
     private String rank;
 
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "employee")
     private List<SiteEntity> sites;
 
 }

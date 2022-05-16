@@ -25,14 +25,14 @@ public class SparePartEntity {
             strategy = GenerationType.SEQUENCE,
             generator = "sparepart_sequence"
     )
-    private Long sparePartUniqueId;
+    private Long uniqueId;
     private String partName;
     private String description;
     private Long quantity;
     private Double price;
     private Long priority;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "site_id")
     private SiteEntity site;
 }
