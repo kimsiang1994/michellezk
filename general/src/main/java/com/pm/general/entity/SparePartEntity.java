@@ -32,6 +32,5 @@ public class SparePartEntity {
     private Long quantity;
     private Double price;
     private Long priority;
-    private SiteEntity site;
     private Long sitesTagged;
 }
