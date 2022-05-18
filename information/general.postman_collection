@@ -50,7 +50,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"employeeId\": \"SMALLMICHELLE5\",\r\n    \"firstName\": \"John\",\r\n    \"lastName\": \"Wooden\",\r\n    \"superiorId\": \"BIGMICHELLE5\",\r\n    \"emailAddress\": \"johnwooden@michelle.com\",\r\n    \"mobileNumber\": 97280011,\r\n    \"title\": \"Software Engineer\",\r\n    \"rank\": \"Associate\",\r\n    \"sites\": [\r\n        {\r\n            \"blockNumber\": 11,\r\n            \"streetName\": \"Cecil Street\",\r\n            \"unitNumber\": \"#01-12\",\r\n            \"city\": \"Singapore\",\r\n            \"country\": \"Singapore\",\r\n            \"postalCode\": \"412123\",\r\n            \"status\": \"Completed\",\r\n            \"remarks\": \"\"\r\n        }, \r\n        {\r\n            \"blockNumber\": 12,\r\n            \"streetName\": \"Town Square\",\r\n            \"unitNumber\": \"#04-12\",\r\n            \"city\": \"Singapore\",\r\n            \"country\": \"Singapore\",\r\n            \"postalCode\": \"423123\",\r\n            \"status\": \"In Progress\",\r\n            \"remarks\": \"\"\r\n        }\r\n    ]\r\n}",
+									"raw": "{\r\n    \"employeeId\": \"SMALLMICHELLE5\",\r\n    \"firstName\": \"John\",\r\n    \"lastName\": \"Wooden\",\r\n    \"superiorId\": \"BIGMICHELLE5\",\r\n    \"emailAddress\": \"johnwooden@michelle.com\",\r\n    \"mobileNumber\": 97280011,\r\n    \"title\": \"Software Engineer\",\r\n    \"rank\": \"Associate\",\r\n    \"sitesTagged\": 1\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -146,7 +146,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"blockNumber\": 11,\r\n    \"streetName\": \"Cecil Street\",\r\n    \"unitNumber\": \"#01-12\",\r\n    \"city\": \"Singapore\",\r\n    \"country\": \"Singapore\",\r\n    \"postalCode\": \"412123\",\r\n    \"status\": \"Completed\",\r\n    \"remarks\": \"\"\r\n}",
+									"raw": "{\r\n    \"blockNumber\": 11,\r\n    \"streetName\": \"Cecil Street\",\r\n    \"unitNumber\": \"#01-12\",\r\n    \"city\": \"Singapore\",\r\n    \"country\": \"Singapore\",\r\n    \"postalCode\": \"412123\",\r\n    \"status\": \"Completed\",\r\n    \"remarks\": \"\",\r\n    \"sparePartsTagged\": 1, \r\n    \"employeesTagged\": 2\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -242,7 +242,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"partName\": \"Laptop\",\r\n    \"description\": \"DELL Secondhand Supreme\",\r\n    \"quantity\": 3,\r\n    \"price\": 250.12,\r\n    \"priority\": 3\r\n}",
+									"raw": "{\r\n    \"partName\": \"Laptop\",\r\n    \"description\": \"DELL Secondhand Supreme\",\r\n    \"quantity\": 3,\r\n    \"price\": 250.12,\r\n    \"priority\": 3, \r\n    \"sitesTagged\": 5\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
